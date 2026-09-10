@@ -1,0 +1,4 @@
+_check/
+launchd.log
+capture-results.json
+preview-*.png
