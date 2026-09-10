@@ -46,6 +46,14 @@ const targets = [
   ['ai-pachinko-maker', 'https://ryoseiimai.github.io/ai-pachinko-maker/'],
   ['gaibu-kioku-statusline', 'https://ryoseiimai.github.io/gaibu-kioku-statusline/'],
   ['ai-pachinko-sim', 'https://ryoseiimai.github.io/ai-pachinko-sim/'],
+  ['hojokin-ai', 'https://hojokin-ai.ryoseiworld.workers.dev/'],
+  ['setup-shindan', 'https://ryoseiworld-setup-diagnosis.ryoseiworld.workers.dev/'],
+  ['tool-tsukuru-kun', 'https://tool-tsukuru-kun.ryoseiworld.workers.dev/'],
+  ['shiire-hantei-kun', 'https://shiire-hantei-kun.kaeru3160.workers.dev/'],
+  ['combat-zone', 'https://imai-design.github.io/combat-zone/'],
+  ['paroshoo', 'https://imai-design.github.io/paroshoo/'],
+  ['net-ad-museum', 'https://imai-design.github.io/net-ad-museum/'],
+  ['claude-usage-meter', 'https://imai-design.github.io/claude-usage-meter/'],
 ];
 
 const results = [];
