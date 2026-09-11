@@ -1,7 +1,7 @@
 {
-  "status": "WAITING",
+  "status": "RUNNING",
   "exec_24h": 49,
   "done_total": 42,
-  "attempts_total": 486,
-  "updated": "2026-09-11T09:00:35.575835+09:00"
+  "attempts_total": 488,
+  "updated": "2026-09-11T10:00:39.530544+09:00"
 }
