@@ -28,6 +28,8 @@
 
 1時間毎に `gen_status.py` を実行し、変更があれば公開リポジトリへpushする想定。
 
+`git push` はGitHub側の一時的なサーバーエラー（例: `fatal error in commit_refs_rules`）で失敗することがある。`scripts/push_status.sh` は commit まで行ったあと push を指数バックオフで数回リトライし、全部失敗したときだけ非0で終了する。
+
 ```xml
 <!-- ~/Library/LaunchAgents/com.ryoseiworld.rwproducts-status.plist の例 -->
 <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +40,7 @@
   <array>
     <string>/bin/zsh</string>
     <string>-c</string>
-    <string>cd ~/dev/2026-08-31-rw-products && python3 gen_status.py && git add data/status.json && git diff --cached --quiet || (git commit -m "chore: update status.json" && git push)</string>
+    <string>~/dev/2026-08-31-rw-products/scripts/push_status.sh</string>
   </array>
   <key>StartInterval</key><integer>3600</integer>
   <key>StandardOutPath</key><string>/tmp/rwproducts-status.log</string>
